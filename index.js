@@ -24,6 +24,8 @@ async function getJoke(){
         btnEl.innerText = "Tell me a Joke";
     
         jokeEl.innerText = data[0].joke;
+        
+        //error warning
     } catch (error) {
         jokeEl.innerText = "An error happened, try again later";
         btnEl.disable = false;
